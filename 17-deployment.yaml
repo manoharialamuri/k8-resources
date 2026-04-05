@@ -8,8 +8,9 @@ metadata:
     purpose: rs-demo
     tier: frontend
     component: frontend
+  annotations:
+    kubernetes.io/change-cause: "moving to 1.29.7"
 spec:
-  # modify replicas according to your case
   replicas: 2
   selector:
     # using these labels replica set selects the pod
@@ -18,7 +19,7 @@ spec:
       purpose: rs-demo
       tier: frontend
       component: frontend
-   # This is pod definition, pod is subset of replicaset
+  # This is pod definition, pod is subset of replicaset
   template:
     metadata:
       labels:
@@ -29,4 +30,4 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:Latest
+        image: nginx:1.29.7
