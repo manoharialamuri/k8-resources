@@ -8,4 +8,4 @@ spec:
     image: nginx
     envfrom:
     - configMapRef:
-        name: nginc-config
+        name: nginx-config
