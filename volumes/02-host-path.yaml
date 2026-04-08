@@ -3,7 +3,7 @@ kind: DaemonSet
 metadata:
   name: fluentd-elasticsearch
   namespace: kube-system
-      labels:
+  labels:
     k8s-app: fluentd-logging
 spec:
   selector:
