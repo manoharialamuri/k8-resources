@@ -41,4 +41,4 @@ spec:
   volumes:
   - name: html
     persistentVolumeClaim:
-      claimName: ebs
+      claimName: ebs-static
